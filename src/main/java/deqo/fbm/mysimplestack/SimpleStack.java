@@ -15,12 +15,12 @@ public class SimpleStack implements ISimpleStack {
 
     @Override
     public int getSize() {
-        return stack.size();
+        return this.stack.size();
     }
 
     @Override
     public void push(Item item) {
-        stack.add(item);
+        this.stack.add(item);
     }
 
     @Override
@@ -36,8 +36,8 @@ public class SimpleStack implements ISimpleStack {
         if (getSize() == 0) {
             throw new EmptyStackException();
         }
-        Item i = stack.get(getSize()-1);
-        stack.remove(getSize()-1);
+        Item i = this.stack.get(getSize()-1);
+        this.stack.remove(getSize()-1);
         return i;
     }
 }
