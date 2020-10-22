@@ -5,8 +5,8 @@ public class Item {
     private int amount;
 
     public Item(String test, int i) {
-        value = test;
-        amount = i;
+        this.value = test;
+        this.amount = i;
     }
 
     public void setAmount(int amount) {
