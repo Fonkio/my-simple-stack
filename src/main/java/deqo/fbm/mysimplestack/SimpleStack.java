@@ -7,10 +7,10 @@ import java.util.List;
 public class SimpleStack implements ISimpleStack {
 
     private List<Item> stack = new LinkedList<Item>();
-
+    //TEST
     @Override
     public boolean isEmpty() {
-        return stack.isEmpty();
+        return this.stack.isEmpty();
     }
 
     @Override
